@@ -38,8 +38,8 @@ public class WindGenerator extends PowerGenerator{ // I HATE MAKING CLASSES so i
     public void drawOverlay(float x, float y, int rotation){
         if(spacing < 1) return;
         float size = (spacing * 2 + this.size / 2f) * tilesize;
-        x -= size / 2f
-        y -= size / 2f
+        x -= size / 2f;
+        y -= size / 2f;
         Drawm.dashPoly(size / 8f, Pal.accent,
             x, y,
             x + size, y,

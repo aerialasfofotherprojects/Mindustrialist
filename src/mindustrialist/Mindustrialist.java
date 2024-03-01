@@ -9,7 +9,7 @@ import mindustry.gen.*;
 import mindustry.mod.*;
 import mindustry.ui.dialogs.*;
 
-public class ExampleJavaMod extends Mod{
+public class Mindustrialist extends Mod{
 
     public ExampleJavaMod(){
         Log.info("Loaded Mindustrialist constructor.");

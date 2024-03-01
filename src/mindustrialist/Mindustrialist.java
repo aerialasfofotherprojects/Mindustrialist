@@ -29,6 +29,10 @@ public class Mindustrialist extends Mod{
     @Override
     public void loadContent(){
         Log.info("Loading Mindustrialist content.");
+        
+        Blocks.load();
+        Items.load();
+        Planets.load();
     }
 
 }

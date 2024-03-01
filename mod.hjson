@@ -1,17 +1,33 @@
 #the mod name as displayed in-game
-displayName: "Java Mod Template"
+displayName: "Mindustrialist"
 
 #the internal name of your mod
-name: "example-java-mod"
+name: "mindustrialist"
 
 #your name
-author: "You"
+author: "aerialasf"
 
 #the fully qualified main class of the mod
-main: "example.ExampleJavaMod"
+main: "mindustrialist.Mindustrialist"
 
 #the mod description as seen in the mod dialog
-description: "A Mindustry Java mod template."
+description: 
+    '''
+    A Mindustry mod that adds Roblox Industrialist to Mindustry.
+    
+    Industrialist:
+    A game centered around factory construction and industrial expansion.
+    Heavily inspired by Mindustry, Factorio & some other industry games.
+    
+    Mindustry:
+    An open-ended factory management game with RTS and tower defense elements.
+    
+    
+    
+    Credits:
+    Lixie and her Allure (when i started making this game with hjson & js)
+    Omaloon by xstabux (alot, like a few files are directly copied from omaloon)
+    '''
 
 #the mod version
 version: 1.0

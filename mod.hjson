@@ -8,7 +8,7 @@ name: "mindustrialist"
 author: "aerialasf"
 
 #the fully qualified main class of the mod
-main: "mindustrialist.Mindustrialist"
+main: "mindustrialist.MDIT"
 
 #the mod description as seen in the mod dialog
 description: 

@@ -3,6 +3,7 @@ package mindustrialist.content.blocks;
 import mindustry.type.*;
 import mindustry.world.*;
 import mindustry.world.draw.*;
+import mindustrialist.content.Items.*;
 import mindustrialist.world.blocks.power.*;
 import mindustrialist.world.draw.*;
 
@@ -22,7 +23,7 @@ public class PowerBlocks{
     
     public static void load(){ // TODO make more blocks
         SolarPanel = new SolarGenerator("solar-panel1"){{
-            requirements(Category.power, with(Item.money, 80));
+            requirements(Category.power, ItemStack.with(Item.money, 80));
             
             powerProduction = 1;
             size = 2;
@@ -30,7 +31,7 @@ public class PowerBlocks{
         }};
         
         LVPole = new PowerNode("lv-pole"){{
-            requirements(Category.power, with(Item.money, 10));
+            requirements(Category.power, ItemStack.with(Item.money, 10));
             
             laserRange = 14.1f;
             maxNodes = 1000;
@@ -39,7 +40,7 @@ public class PowerBlocks{
         }};
         
         WindTurbineI = new WindGenerator("wind-turbine1"){{
-            requirements(Category.power, with(Item.money, 400));
+            requirements(Category.power, ItemStack.with(Item.money, 400));
             
             drawer = new DrawMulti(
               new DrawRegion("-rotator-shadow"){{

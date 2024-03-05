@@ -1,4 +1,4 @@
-package example;
+package mindustrialist;
 
 import arc.*;
 import arc.util.*;
@@ -9,7 +9,7 @@ import mindustry.gen.*;
 import mindustry.mod.*;
 import mindustry.ui.dialogs.*;
 
-public class Mindustrialist extends Mod{
+public class MDIT extends Mod{
 
     public Mindustrialist(){
         Log.info("Loaded Mindustrialist constructor.");
@@ -30,9 +30,9 @@ public class Mindustrialist extends Mod{
     public void loadContent(){
         Log.info("Loading Mindustrialist content.");
         
-        Blocks.load();
-        Items.load();
-        Planets.load();
+        MDITBlocks.load();
+        MDITItems.load();
+        MDITPlanets.load();
     }
 
 }

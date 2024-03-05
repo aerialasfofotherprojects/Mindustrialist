@@ -9,7 +9,7 @@ import mindustrialist.world.draw.*;
 
 import static mindustry.type.ItemStack.*;
 
-public class PowerBlocks{
+public class MDITPowerBlocks{
     public static Block
             SolarPanel,
             LVPole,

@@ -12,6 +12,6 @@ public class MDITPlanets{
             moon;
     
     public static void load(){
-        mindustrialist = new Planet();
+        //TODO add planets
     }
 }

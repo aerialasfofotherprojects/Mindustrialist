@@ -11,7 +11,7 @@ import mindustry.ui.dialogs.*;
 
 public class MDIT extends Mod{
 
-    public Mindustrialist(){
+    public MDIT(){
         Log.info("Loaded Mindustrialist constructor.");
 
         //listen for game load event

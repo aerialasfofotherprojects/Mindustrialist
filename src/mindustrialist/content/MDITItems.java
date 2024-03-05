@@ -10,6 +10,6 @@ public class MDITItems{
             researchpoints;
     
     public static void load(){
-        money = new Item("money", Color.valueOf("65bb65"))
+        money = new Item("money", Color.valueOf("65bb65"));
     }
 }

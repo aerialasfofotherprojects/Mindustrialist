@@ -3,7 +3,7 @@ package mindustrialist.content.blocks;
 import mindustry.type.*;
 import mindustry.world.*;
 import mindustry.world.draw.*;
-import mindustrialist.content.Items.*;
+import mindustrialist.content.MDITItems;
 import mindustrialist.world.blocks.power.*;
 import mindustrialist.world.draw.*;
 

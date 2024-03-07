@@ -7,7 +7,7 @@ import mindustrialist.content.Items.*;
 import mindustrialist.world.blocks.power.*;
 import mindustrialist.world.draw.*;
 
-import static mindustry.type.ItemStack.*;
+import static mindustry.type.ItemStack;
 
 public class MDITPowerBlocks{
     public static Block

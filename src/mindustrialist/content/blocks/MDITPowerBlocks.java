@@ -23,7 +23,7 @@ public class MDITPowerBlocks{
     
     public static void load(){ // TODO make more blocks
         SolarPanel = new SolarGenerator("solar-panel1"){{
-            requirements(Category.power, with(Item.money, 80));
+            requirements(Category.power, with(MDITItems.money, 80));
             
             powerProduction = 1;
             size = 2;
@@ -31,7 +31,7 @@ public class MDITPowerBlocks{
         }};
         
         LVPole = new PowerNode("lv-pole"){{
-            requirements(Category.power, with(Item.money, 10));
+            requirements(Category.power, with(MDITItems.money, 10));
             
             laserRange = 14.1f;
             maxNodes = 1000;
@@ -40,7 +40,7 @@ public class MDITPowerBlocks{
         }};
         
         WindTurbineI = new WindGenerator("wind-turbine1"){{
-            requirements(Category.power, with(Item.money, 400));
+            requirements(Category.power, with(MDITItems.money, 400));
             
             drawer = new DrawMulti(
               new DrawRegion("-rotator-shadow"){{

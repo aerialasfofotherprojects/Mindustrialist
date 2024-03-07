@@ -20,6 +20,7 @@ import static mindustry.Vars.*;
 public class WindGenerator extends PowerGenerator{ // I HATE MAKING CLASSES so i "borrowed" this one from omaloon i hope omaloon has the gnu v3 license
     public int spacing = 3;
     public float rotateSpeed = 60f;
+    public float boostWeather = 0.3f;
     
     public WindGenerator(String name){
         super(name);

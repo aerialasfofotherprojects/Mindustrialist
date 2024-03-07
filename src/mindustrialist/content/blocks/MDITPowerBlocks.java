@@ -46,15 +46,15 @@ public class MDITPowerBlocks{
               new DrawRegion("-rotator-shadow"){{
                 spinSprite = true; 
                 rotateSpeed = 2;
-                x = -0.49;
-                y = -0.49;
+                x = -0.49f;
+                y = -0.49f;
               }},
               new DrawDefault(),
               new DrawRegion("-rotator"){{
                 spinSprite = true;
                 rotateSpeed = 2;
-                x = -0.5;
-                y = -0.5;
+                x = -0.5f;
+                y = -0.5f;
               }},
               new DrawRegion("-top")
             );

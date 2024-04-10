@@ -9,6 +9,7 @@ import mindustry.gen.*;
 import mindustry.mod.*;
 import mindustry.ui.dialogs.*;
 import mindustrialist.content.*;
+import mindustry.world.meta.Attribute;
 
 public class MDIT extends Mod{
 
@@ -29,11 +30,16 @@ public class MDIT extends Mod{
 
     @Override
     public void loadContent(){
-        Log.info("Loading Mindustrialist content.");
+        Log.info("MDIT: Loading Mindustrialist content.");
         
         MDITBlocks.load();
         MDITItems.load();
         MDITPlanets.load();
+        MDITUnitTypes.load();
+        
+        Log.info("MDIT: Configuring Vanilla Objects.");
+        
+        Blocks.stone.attributes.set(Attribute.get("stone"), 1f);
     }
 
 }

@@ -69,12 +69,28 @@ public class MDITBlocks{
             SolarPanel,
             LVPole,
             WindTurbineI,
-            LVBattery,
+            RustyBattery,
             MVPole,
             SolarPanelII,
             WindTurbineII,
             MVBattery,
-            DoubleMVBattery;
+            DoubleMVBattery,
+            
+            //distribution & selling
+            ShortItemPipe,
+            ItemPipeJunction,
+            ItemPipeRouter,
+            ShortFluidPipe,
+            FluidPipeJunction,
+            FluidPipeRouter,
+            ShortItemPipe2,
+            ItemPipeJunction2,
+            ItemPipeRouter2,
+            ShortFluidPipe2,
+            FluidPipeJunction2,
+            FluidPipeRouter2,
+    
+    end;
 
     public static void load(){ // TODO make more blocks
         
@@ -207,6 +223,12 @@ public class MDITBlocks{
             size = 5;
             
             outputItem = new ItemStack(MDITItems.Soil, 1);
+            craftTime = 60;
+            hasItems = true;
+            craftEffect = Fx.none;
+            attribute = Attribute.get("grass");
+            
+            consumePower(300f);
         }};
         
         //power
@@ -218,16 +240,14 @@ public class MDITBlocks{
             size = 2;
             health = 1;
         }};
-
         LVPole = new PowerNode("lv-pole"){{
             requirements(Category.power, with(MDITItems.Money, 10));
 
             laserRange = 14.1f;
-            maxNodes = 1000;
+            maxNodes = 10000;
             size = 2;
             health = 1;
         }};
-
         WindTurbineI = new WindGenerator("wind-turbine1"){{
             requirements(Category.power, with(MDITItems.Money, 400));
 
@@ -248,7 +268,20 @@ public class MDITBlocks{
                     new DrawRegion("-top")
             );
             size = 2;
-            powerProduction = 3;
+            minPower = 0.1f;
+            maxPower = 3f;
         }};
+        RustyBattery = new Battery("lv-battery"){{
+            requirements(Category.power, with(MDITItems.Money, 100));
+            
+            consumePowerBuffered(0.1f);
+            baseExplosiveness = 99999999999999999f;
+        }};
+        MVPole = new PowerNode("mv-pole"){{}};
+        
+        
+        
+        //special
+        end = null;
     }
 }

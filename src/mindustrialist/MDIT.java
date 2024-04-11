@@ -10,12 +10,13 @@ import mindustry.mod.*;
 import mindustry.ui.dialogs.*;
 import mindustrialist.content.*;
 import mindustry.world.meta.Attribute;
+import java.io.File;
 
 public class MDIT extends Mod{
-
+    
     public MDIT(){
         Log.info("Loaded Mindustrialist constructor.");
-
+        
         //listen for game load event
         Events.on(ClientLoadEvent.class, e -> {
             //show dialog upon startup
@@ -26,8 +27,14 @@ public class MDIT extends Mod{
                 dialog.show();
             });
         });
+        
+        Events.on(UnitDestroyEvent.class, e -> {
+            if(e.unit.isPlayer()){
+                Vars.ui.hudfrag.showToast("Pathetic.");
+            }
+        });
     }
-
+    
     @Override
     public void loadContent(){
         Log.info("MDIT: Loading Mindustrialist content.");
@@ -41,5 +48,5 @@ public class MDIT extends Mod{
         
         Blocks.stone.attributes.set(Attribute.get("stone"), 1f);
     }
-
+    
 }

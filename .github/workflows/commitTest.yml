@@ -1,6 +1,10 @@
 name: Build Mod
 
-on: [push, pull_request]
+on:
+  push:
+  pull_request:
+  release:
+    types: [published]
 
 jobs:
   buildJar:

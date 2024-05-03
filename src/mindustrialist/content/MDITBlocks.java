@@ -70,11 +70,17 @@ public class MDITBlocks{
             LVPole,
             WindTurbineI,
             RustyBattery,
+            SmallMVPole,
             MVPole,
+            AdvancedMVPole,
+            HMVT,
+            HVPole,
             SolarPanelII,
             WindTurbineII,
             MVBattery,
             DoubleMVBattery,
+            HVBattery,
+            HVBatteryMK2,
             
             //distribution & selling
             ShortItemPipe,
@@ -243,7 +249,7 @@ public class MDITBlocks{
         LVPole = new PowerNode("lv-pole"){{
             requirements(Category.power, with(MDITItems.Money, 10));
 
-            laserRange = 14.1f;
+            laserRange = 5.1f * 8;
             maxNodes = 10000;
             size = 2;
             health = 1;
@@ -277,8 +283,46 @@ public class MDITBlocks{
             consumePowerBuffered(0.1f);
             baseExplosiveness = 99999999999999999f;
         }};
-        MVPole = new PowerNode("mv-pole"){{}};
-        
+        SmallMVPole = new PowerNode("small-mv-pole"){{
+            requirements(Category.power, with(MDITItems.Money, 40));
+            
+            laserRange = 5.1f * 8f;
+            maxNodes = 10000;
+            size = 2;
+            health = 1;
+        }};
+        MVPole = new PowerNode("mv-pole"){{
+            requirements(Category.power, with(MDITItems.Money, 80));
+            
+            laserRange = 9.1f * 8f;
+            maxNodes = 10000;
+            size = 2;
+            health = 1;
+        }};
+        AdvancedMVPole = new PowerNode("advanced-mv-pole"){{
+            requirements(Category.power, with(MDITItems.Money, 300));
+            
+            laserRange = 14.1f * 8f;
+            maxNodes = 10000;
+            size = 2;
+            health = 1;
+        }};
+        HMVT = new PowerNode("hmvt"){{
+            requirements(Category.power, with(MDITItems.Money, 10000));
+            
+            laserRange = 24.1f * 8f;
+            maxNodes = 10000;
+            size = 2;
+            health = 1;
+        }};
+        HVPole = new PowerNode("hv-pole"){{
+            requirements(Category.power, with(MDITItems.Money, 2500000));
+            
+            laserRange = 34.1f * 8f;
+            maxNodes = 10000;
+            size = 2;
+            health = 1;
+        }};
         
         
         //special

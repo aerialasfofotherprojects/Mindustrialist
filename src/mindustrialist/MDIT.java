@@ -20,7 +20,7 @@ public class MDIT extends Mod{
         //listen for game load event
         Events.on(ClientLoadEvent.class, e -> {
             //show dialog upon startup
-            Time.runTask(10f, () -> {
+            Time.runTask(60f, () -> {
                 BaseDialog dialog = new BaseDialog("This mod is still WIP. Do you wish to continue?");
                 dialog.cont.button("Yes", dialog::hide).size(100f, 50f);
                 dialog.cont.button("No", Core.app::exit).size(100f, 50f);
@@ -38,6 +38,8 @@ public class MDIT extends Mod{
     @Override
     public void loadContent(){
         Log.info("MDIT: Loading Mindustrialist content.");
+        
+        MDITAttributes.load();
         
         MDITBlocks.load();
         MDITItems.load();

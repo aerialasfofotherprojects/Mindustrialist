@@ -138,13 +138,13 @@ public class MDITBlocks{
             
             itemCapacity = 5000;
         }};
-        GoldItemStorageSilo = new Router("small-item-storage-silo"){{
-            requirements(Category.effect, with(MDITItems.Money, 100));
+        GoldItemStorageSilo = new Router("gold-item-storage-silo"){{
+            requirements(Category.effect, with(MDITItems.Money, 100000));
             
             itemCapacity = 1665000;
         }};
-        GoldLiquidStorageSilo = new LiquidRouter("small-liquid-storage-silo"){{
-            requirements(Category.effect, with(MDITItems.Money, 500));
+        GoldLiquidStorageSilo = new LiquidRouter("gold-liquid-storage-silo"){{
+            requirements(Category.effect, with(MDITItems.Money, 100000));
             
             itemCapacity = 1665000;
         }};

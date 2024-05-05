@@ -10,7 +10,6 @@ import mindustry.mod.*;
 import mindustry.ui.dialogs.*;
 import mindustrialist.content.*;
 import mindustry.world.meta.Attribute;
-import java.io.File;
 
 public class MDIT extends Mod{
     

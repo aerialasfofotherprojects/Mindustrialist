@@ -33,7 +33,7 @@ public class MDITItems{
         
         //crafted materials
         
-        Iron = new Item("raw-iron", Color.valueOf("c0c0c0")){{buildable = false;}};
+        Iron = new Item("iron", Color.valueOf("c0c0c0")){{buildable = false;}};
         
     }
 }
